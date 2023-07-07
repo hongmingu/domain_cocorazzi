@@ -47,13 +47,6 @@ def modify_and_move_files(original_dir, target_dir):
                         elif line.strip() == "":
                             new_f.write(line)
                         else:
-                            words = line.split()
-                            if len(words) > 2:
-                                rand_word = random.choice(words[1:])
-                                if random.choice([True, False]):
-                                    line = line.replace(rand_word, f"**{rand_word}**")
-                                else:
-                                    line = line.replace(rand_word, f"_{rand_word}_")
                             line = line.replace("하세요", "할 것")
                             line = line.replace("기울이세요", "기울일 것")
                             line = line.replace("바르십시오", "바를 것")
@@ -83,11 +76,11 @@ def modify_and_move_files(original_dir, target_dir):
                             line = line.replace("낮습니다", "낮음")
                             line = line.replace("따릅니다", "따름")
                             line = line.replace("받습니다", "받음")
-                            line = line.replace("갑니다", "갈 것")
+                            line = line.replace("으십시오", "을 것")
+                            line = line.replace("갑니다", "감")
                             line = line.replace("즐기세요", "즐길 것")
                             line = line.replace("갑니다", "갈 것")
-                            new_line = "-" + line
-                            new_f.write(new_line)
+                            new_f.write(line)
 
 # 현재 스크립트의 위치를 찾음
 current_script_path = os.path.dirname(os.path.abspath(__file__))
