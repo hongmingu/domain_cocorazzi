@@ -77,9 +77,17 @@ def modify_and_move_files(original_dir, target_dir):
                             line = line.replace("따릅니다", "따름")
                             line = line.replace("받습니다", "받음")
                             line = line.replace("으십시오", "을 것")
-                            line = line.replace("갑니다", "감")
+                            line = line.replace("갑니다", "갈 것")
                             line = line.replace("즐기세요", "즐길 것")
                             line = line.replace("갑니다", "갈 것")
+                            line = line.replace("집니다", "짐")
+                            line = line.replace("많습니다", "많음")
+                            line = line.replace("만드세요", "만들 것")
+                            line = line.replace("나눕니다", "나눌 것")
+                            line = line.replace("집니다", "짐")
+                            line = line.replace("지세요", "질 것")
+                            line = line.replace("받습니다", "받을 것")
+                            line = line.replace("읽습니다", "읽을 것")
                             new_f.write(line)
 
 # 현재 스크립트의 위치를 찾음
